@@ -1,0 +1,8 @@
+[Unit]
+Description=VideoAutomation: проверка расписания каждые 5 минут
+[Timer]
+OnBootSec=2min
+OnCalendar=*:0/5
+Persistent=true
+[Install]
+WantedBy=timers.target

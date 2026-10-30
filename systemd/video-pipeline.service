@@ -1,0 +1,12 @@
+[Unit]
+Description=VideoAutomation: обработка видео из inbox
+After=network.target llama-server.service
+
+[Service]
+Type=simple
+ExecStart=%h/VideoAutomation/watcher.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,23 @@
+; ~/models/presets.ini — пресеты llama-server (router mode)
+[*]
+ctx-size = 0
+mmap = 1
+kv-unified = 1
+parallel = 1
+spec-default = 1
+
+[Qwen3.6-35B-A3B-MTP]
+model = /home/obeme/models/Qwen3.6-35B-A3B-MTP/Qwen3.6-35B-A3B-UD-Q4_K_S.gguf
+ctx-size = 65536
+n-gpu-layers = 99
+flash-attn = true
+threads = 12
+spec-type = draft-mtp
+spec-draft-n-max = 3
+reasoning = false
+cpu-moe = true
+top-p = 1.0
+top-k = 0
+min-p = 0.01
+temp = 1.0
+load-on-startup = true

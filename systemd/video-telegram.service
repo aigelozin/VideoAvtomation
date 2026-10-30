@@ -1,0 +1,5 @@
+[Unit]
+Description=VideoAutomation: записи блога → Telegram
+[Service]
+Type=oneshot
+ExecStart=%h/VideoAutomation/.venv/bin/python3 %h/VideoAutomation/tg_publish.py

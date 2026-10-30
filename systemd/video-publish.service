@@ -1,0 +1,5 @@
+[Unit]
+Description=VideoAutomation: публикация по расписанию
+[Service]
+Type=oneshot
+ExecStart=%h/VideoAutomation/.venv/bin/python3 %h/VideoAutomation/publish_due.py

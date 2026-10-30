@@ -1,0 +1,26 @@
+# секреты — никогда не в git
+.env
+*.env
+yt_client_secret.json
+yt_token.json
+client_secret_*.json
+# данные
+inbox/
+processing/
+done/
+transcripts/
+descriptions/
+articles/
+thumbnails/
+logs/
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.webm
+# служебное
+.venv/
+__pycache__/
+*.pyc
+*.bak.*
+.cuda_path

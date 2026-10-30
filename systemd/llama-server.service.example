@@ -1,0 +1,13 @@
+# Пример системного сервиса llama.cpp (ставится в /etc/systemd/system/llama-server.service, нужен sudo).
+[Unit]
+Description=llama.cpp server (Qwen3.6-35B-A3B-MTP)
+After=network.target
+
+[Service]
+User=obeme
+ExecStart=/home/obeme/llama.cpp/build/bin/llama-server --models-preset /home/obeme/models/presets.ini --host 127.0.0.1 --port 8080 --models-max 1
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
